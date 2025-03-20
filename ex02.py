@@ -1,11 +1,12 @@
-# Faça um programa em Python que leia do usuário dois números. Faça a
-# multiplicação dos dois números e mostre o resultado.
+idade = int(input("Digite a idade do eleitor: "))
 
-num1 = int(input('Digite um numero: '))
-num2 = int(input('Digite um numero: '))
+if idade > 15 and idade <= 17:
+    print("VOTO FACULTATIVO")
+    
+elif idade >= 18 or idade <=65:
+    print("Voto obrigatório")
+    
+else:
+    print("Não precisa votar")
 
-mult=num1*num2
-
-print(f"O resultado da multiplicação é {mult}")
-
-
+print("Fim do programa.")
