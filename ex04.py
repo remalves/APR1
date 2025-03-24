@@ -1,8 +1,16 @@
-n1 = float(input("Digite a primeira nota: "))
+a =int(input("Digite o primeiro valor: "))
+b =int(input("Digite o segundo valor: "))
+c =int(input("Digite o terceiro valor: "))
 
-n2 = float(input("Digite a segunda nota: ")) 
+if a+b>c and b+c>a and a+c>b: 
+    print("é um triangulo!")
 
-
-media = (n1 * 0.6 ) + (n2 * 0.4 ) / (0.6 + 0.4)
-
-print(f"resultado da media {media}")
+    if a == b and b == c: 
+        print("equilatero")
+    elif a == b or b == c or a == c:
+        print("isoceles")
+    else:
+        print("escaleno")
+    
+else:
+    print("Não é um triangulo.")
