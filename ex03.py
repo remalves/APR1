@@ -1,6 +1,6 @@
-num = int(input("Digite um número: "))
+num = int(input("informe a tabuada a ser calculada: "))
+i=1
 
-sucessor = num + 1
-antecessor = num - 1
-
-print(f"O numero escolhido {num} tem como antecessor {antecessor} e sucessor {sucessor}")
+while i <= 10:
+    print(f"{i} x {num} = {num*i}")
+    i+=1
