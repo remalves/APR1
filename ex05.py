@@ -1,24 +1,26 @@
+'''Faça um programa que receba um número inteiro maior que 1,
+verifique se o número é primo ou não e mostre a mensagem de
+número primo ou de número não primo. Obs: Um número é primo
+quando é divisível apenas por 1 e por ele mesmo.'''
 
+number = int(input("Digite um numero maior que 1 e descubra se é primo: "))
 
-a = float(input("Digite o valor de A: "))
-if a!=0:
-    b = float(input("Digite o valor de B: "))
-    c = float(input("Digite o valor de C: "))
+while number <= 1: 
+    number = int(input("Digite um numero maior que 1: "))
 
-    delta = b**2 - (4*a*c)
-
-    if delta < 0:
-        print("Sem raíz real")
-
-    elif delta == 0:
-        x1= (-b)/ (2*a)
-        print(f"valor de x: {x1:.2f}")
-
-    else:
-        import math
-        x1 = (-b + math.sqrt(delta)) / (2 * a)
-        x2 = (-b - math.sqrt(delta))/ (2*a)
-        print(f"x1= {x1:.2f} e x2={x2:.2f}")
+if number % 2 == 0:
+    print(f"o numero {number} nao eh primo")
 
 else:
-    print("valor de a não pode ser zero")
+    print(f"o numero {number} é primo")
+    
+    
+
+
+
+
+    
+
+
+
+

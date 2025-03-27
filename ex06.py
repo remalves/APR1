@@ -1,12 +1,19 @@
-valorCompra = float(input("Digite o valor total gasto: "))
+# Faça um programa em Python que receba dois valores inteiros,
+# representando a base e o expoente. O programa deverá calcular e
+# apresentar o resultado da base elevada ao expoente. Por exemplo, para
+# base = 5 e expoente = 3, ou seja, 53, o programa deverá imprimir 125.
+#  Obs: não utilize o operador de exponenciação (**). Utilize somente estrutura de
+# repetição.
 
-if valorCompra >=200:
-    novo_valor = valorCompra * 0.8 
-elif valorCompra > 100: 
-    novo_valor = valorCompra*0.9
-else:
-    novo_valor = valorCompra*0.95
+base = int(input("Digite o numero da base: "))
+expoent = int(input("Digite o numero do expoente: "))
 
-print(f"valor com desconto: {novo_valor}")
+print(f"base = {base}, expoente = {expoent}") 
 
+valorElevado = 1
 
+while expoent > 0: 
+    valorElevado = valorElevado * base
+    expoent = expoent - 1 
+
+print(f"resultado = {valorElevado:.2f}")

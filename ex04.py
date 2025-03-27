@@ -1,16 +1,21 @@
-a =int(input("Digite o primeiro valor: "))
-b =int(input("Digite o segundo valor: "))
-c =int(input("Digite o terceiro valor: "))
+'''Faça um programa para mostrar as tabuadas de todos os números de 1
+a 10.'''
 
-if a+b>c and b+c>a and a+c>b: 
-    print("é um triangulo!")
+i=1
 
-    if a == b and b == c: 
-        print("equilatero")
-    elif a == b or b == c or a == c:
-        print("isoceles")
-    else:
-        print("escaleno")
+while i <= 10:
+    print("\n")
+    print(f"Tabuada do numero {i}")
+    x=1
     
-else:
-    print("Não é um triangulo.")
+    while x <= 10:
+        mult = i * x 
+        print(f"{i} x {x}= {mult}")
+        x=x+1
+
+  
+    i=i+1
+   
+
+
+
