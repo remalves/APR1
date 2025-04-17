@@ -1,14 +1,3 @@
-'''Faça um programa que solicite do usuário os elementos de uma matriz 3
-x 2 (matriz A). Em seguida, o programa deverá criar a matriz transposta
-de A (A
-t
-). Ao final, deve ser mostrada a matriz original e sua respectiva
-transposta. Lembre-se que a matriz transposta A
-t
-será obtida a partir da
-matriz A trocando-se ordenadamente as linhas por colunas (ou as
-colunas por linhas),'''
-
 matriz = []
 li = 3
 coluna = 2 
@@ -27,9 +16,6 @@ while i < li:
         j+=1
     matriz.append(linha)
     i+=1
-
-
-
 
 transposta=[]
 j=0
