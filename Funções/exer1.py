@@ -17,4 +17,8 @@ print(f'soma= {result}')
 result = subtrai(num1,num2)
 print(f'subtração = {result}')
 
-divide(num1,num2)
+result = divide(num1,num2)
+if result == None:
+    print('Não existe divisão por zero')
+else: 
+    print(f"Divisao:{result} ")
